@@ -1,0 +1,7 @@
+<a data-ui-sref="gramNew">New Gram!</a>
+<h2>These are all the Grams</h2>
+
+<div data-ng-repeat="gram in GramIndexViewModel.grams| orderBy:'-created_at'">
+  <p><a data-ui-sref="gramShow({id: gram.id})">{{gram.body}}</></p>
+    <a data-ui-sref="gramEdit({id: gram.id})">Edit</a>
+</div>

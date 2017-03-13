@@ -1,0 +1,9 @@
+<h2>Edit this Gram!</h2>
+
+<form>
+  <input placeholder="Update Photo URL" data-ng-model="GramEditViewModel.gram.photo_Url" />
+  <input value="GramEditViewModel.gram.author" data-ng-model="GramEditViewModel.gram.author" />
+  <textarea value="GramEditViewModel.gram.body" data-ng-model="GramEditViewModel.gram.body"></textarea>
+  <button type="button" data-ng-click="GramEditViewModel.update()">Update</button>
+  <button data-ng-click="GramEditViewModel.destroy()">Delete</button>
+</form>
